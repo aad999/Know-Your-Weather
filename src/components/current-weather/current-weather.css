@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.weather {
+  @apply w-full items-center grid desktop:grid-cols-4 laptop:grid-cols-2 desktop:space-y-0 space-y-10 tablet:grid-cols-1 shadow-white/20 shadow-inner text-white bg-gradient-to-br from-slate-400/10 to-white/10 backdrop-blur-md mx-auto p-10 rounded-md transition delay-100 duration-500 ease-in-out hover:scale-[1.01] mt-10 mb-16;
+}
+.top {
+  @apply flex justify-around items-center;
+}
+.bottom {
+  @apply flex justify-center items-center;
+}
+.city {
+  @apply flex flex-col h-40 items-center justify-center;
+}
+.city-name {
+  @apply font-semibold text-2xl leading-none tracking-wide m-0;
+}
+.weather-description {
+  @apply font-normal leading-none m-0;
+}
+.weather-icon {
+  @apply flex flex-col items-center justify-center;
+}
+.weather-icon-value {
+  @apply w-44 h-44 mt-1;
+}
+.temperature {
+  @apply flex flex-col items-center justify-center font-semibold text-7xl w-auto tracking-tighter mx-0 h-40;
+}
+.details {
+  @apply w-full py-10 flex flex-col space-y-1 justify-center items-center;
+}
+.parameter-row {
+  @apply text-xs laptop:text-sm flex w-36 tablet:w-40 laptop:w-40 justify-between;
+}
+.parameter-label {
+  @apply text-left font-normal;
+}
+.parameter-value {
+  @apply text-right font-semibold;
+}
+.parameter-label.top {
+  @apply border-b-white border-b border-solid;
+}

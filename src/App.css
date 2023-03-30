@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply max-w-[1000px] mx-auto my-5 p-3 tablet:p-10;
+}
+
+.top-bar{
+  @apply w-full flex justify-around items-center space-x-5
+}
+
+.logo{
+  @apply rounded-lg h-full flex items-center justify-center p-3 shadow-white/20 shadow-inner text-white bg-gradient-to-br from-black/10 to-slate-500/10 backdrop-blur-md mx-auto transition-all duration-500 ease-in-out hover:scale-105;
+}
+
+.logo-value{
+  @apply w-28
+}
+
+.search{
+  @apply w-full h-full;
+}

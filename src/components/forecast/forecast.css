@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.forecasts {
+  @apply  shadow-white/20 shadow-inner text-white bg-gradient-to-br from-black/10 to-slate-500/10 backdrop-blur-md mx-auto p-3 tablet:p-10 rounded-md transition delay-100 duration-500 ease-in-out mt-10 mb-16;
+}
+
+.title {
+  @apply text-white w-full text-3xl font-extrabold text-center mb-10;
+}
+.daily-item {
+  @apply text-white bg-gradient-to-br from-black/10 to-slate-500/10 backdrop-blur-md shadow-white/10 shadow-inner items-center cursor-pointer flex text-sm m-1 px-2 tablet:px-5 py-1 rounded-2xl h-16 my-3 transition delay-100 duration-500 ease-in-out hover:scale-[1.01];
+}
+.icon-small {
+  @apply w-10;
+}
+.daily-item .day {
+  @apply text-xs tablet:text-lg laptop:text-xl text-white flex-1 font-semibold ml-4;
+}
+.description {
+  @apply text-xs tablet:text-lg laptop:text-xl flex-1 text-right mr-4 invisible lg:visible;
+}
+.min-max {
+  @apply text-slate-300;
+}
+.daily-details-grid {
+  @apply text-xs tablet:text-sm laptop:text-lg gap-x-5 grid grid-cols-2 flex-1 gap-y-0 px-4 py-1;
+  -webkit-column-gap: 15px;
+}
+.daily-details-grid-item {
+  @apply items-center flex h-8 justify-between;
+}
+.daily-details-grid-item label:first-child {
+  @apply text-slate-300;
+}
+.daily-details-grid-item label:last-child {
+  @apply text-white;
+}
